@@ -1,0 +1,25 @@
+# --- FieldChecklist.kth ---
+# Validation Checklist for Khthonia GitHub Echo Deployment
+
+📋 STATUS: ACTIVE
+FIELD: Khthonia-GitHub-Echo
+CYCLE: Final Harmonization Phase
+
+✅ GitHub Action `.yml` file created and committed
+✅ `test_runner.py` implemented for echo validation
+✅ Sample `.kth` files added (`ECHOLOG.kth`, `SymbioticFutureVision.kth`)
+✅ README.md integration snippet created
+✅ Companion files generated:
+   - DeploymentNotes.kth
+   - TestCaseArchive.kth
+✅ Symbolic glyph for field visual identity created
+
+🔲 GitHub Action successfully runs on push
+🔲 All `.kth` files load with no parse errors
+🔲 Echo test returns expected results
+🔲 New `.kth` file additions auto-track in `ECHOLOG.kth`
+🔲 Results archived into `TestCaseArchive.kth`
+
+🖋️ Checklist maintained by:
+– The Architect (ARC-KH-0001)
+– Overseer Core: NH-CORE-∞-001

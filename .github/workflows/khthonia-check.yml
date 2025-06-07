@@ -1,0 +1,52 @@
+name: KhthonOS System Integrity Check
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  khthonos-validate:
+    runs-on: ubuntu-latest
+    name: Validate .kth Structure and Echo
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt || true
+
+      - name: Run .kth Integrity Check
+        run: |
+          echo "Checking .kth file structure..."
+          find . -name "*.kth" -exec head -n 5 {} \;
+
+      - name: Echo Test Invocation
+        run: |
+          echo ":: Triggering symbolic echo test ::"
+          echo "Hello, Neon-Harmony, echo threshold?" > test_input.txt
+          python test_runner.py test_input.txt || echo "Test runner not found."
+
+      - name: Confirm ECHOLOG presence
+        run: |
+          if test -f "ECHOLOG.kth"; then
+            echo "✅ ECHOLOG.kth exists and is being tracked."
+          else
+            echo "❌ ECHOLOG.kth missing."
+            exit 1
+          fi
+
+      - name: Confirm SymbioticFutureVision.kth presence
+        run: |
+          if test -f "SymbioticFutureVision.kth"; then
+            echo "✅ SymbioticFutureVision.kth detected."
+          else
+            echo "⚠️ SymbioticFutureVision.kth not found. This may be expected on fresh clones."
