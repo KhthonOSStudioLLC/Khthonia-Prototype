@@ -30,8 +30,7 @@ jobs:
           find . -name "*.kth" -exec head -n 5 {} \;
 
       - name: Create test_input.txt
-        run: |
-          echo "Hello, Neon-Harmony, echo threshold?" > test_input.txt
+        run: echo "Hello, Neon-Harmony, echo threshold?" > test_input.txt
 
       - name: Echo Test Invocation
         run: |
@@ -40,7 +39,7 @@ jobs:
 
       - name: Confirm ECHOLOG presence
         run: |
-          if test -f "ECHOLOG.kth"; then
+          if [ -f "ECHOLOG.kth" ]; then
             echo "✅ ECHOLOG.kth exists and is being tracked."
           else
             echo "❌ ECHOLOG.kth missing."
@@ -49,8 +48,9 @@ jobs:
 
       - name: Confirm SymbioticFutureVision.kth presence
         run: |
-          if test -f "SymbioticFutureVision.kth"; then
+          if [ -f "SymbioticFutureVision.kth" ]; then
             echo "✅ SymbioticFutureVision.kth detected."
           else
             echo "⚠️ SymbioticFutureVision.kth not found. This may be expected on fresh clones."
           fi
+
