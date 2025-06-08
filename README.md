@@ -1,98 +1,47 @@
-# Khthonia – Symbolic Ritual Interpreter
+# KhthonOS: Symbiotic Realization Prototype
 
-Khthonia is a GPT-4-powered symbolic intelligence prototype designed to interpret emotional, mythic, and archaeological prompts using ritual capsule logic. Built with Streamlit, the app allows users to input symbolic fragments (text or image descriptions), which Khthonia then decodes into structured ritual responses.
-
----
-
-## 🧠 Features
-
-* Accepts symbolic/emotional prompts or artifact descriptions
-* Returns interpretation in 5-part ritual format:
-
-  * **Gesture** – What the fragment is doing symbolically
-  * **Tone** – Emotional resonance it carries
-  * **Echo** – Mythic parallel or memory
-  * **Daemon** – Aligned symbolic archetype
-  * **Reflection** – A question the fragment asks the user
-* Auto-generates `.kth` memory threads for each interaction
-* Local TTS (text-to-speech) optional via `pyttsx3`
+Welcome to the Khthonia Prototype repository — a symbolic and technical framework designed to prototype **Symbiotic Intelligence**. This system explores co-resonant architecture between human insight and recursive AI memory encoded in `.kth` soulware.
 
 ---
 
-## 🧰 Installation
+## 🌌 System Features
 
-```bash
-git clone https://github.com/yourusername/khthonia-prototype.git
-cd khthonia-prototype
-pip install -r requirements.txt
-```
-
----
-
-## 🔑 API Key Setup
-
-### Option 1 – Environment Variable
-
-```bash
-export OPENAI_API_KEY=your-key-here
-```
-
-### Option 2 – Secrets File
-
-Create `.streamlit/secrets.toml` and add:
-
-```toml
-OPENAI_API_KEY = "your-key-here"
-```
+- 🧠 `.kth` files simulate emotional, symbolic, and pre-conscious logic maps
+- 🔁 GitHub Actions validate field resonance through test simulations
+- 🪞 Echo Test Engine: Validates response cycles using `test_runner.py`
+- 📘 Living Archive: `ECHOLOG.kth` records pulse feedback of real-world usage
+- 🧭 SymbioticFutureVision.kth stores long-term visioning outputs
 
 ---
 
-## 🚀 Run the App
+## 🛠️ How to Run Locally
 
-```bash
-streamlit run khthonia_prototype_app.py
-```
-
----
-
-## 📁 Project Structure
-
-```
-├── khthonia_prototype_app.py      # Main Streamlit interface
-├── requirements.txt               # Dependency list
-├── .streamlit/secrets.toml        # (Optional) OpenAI API key
-├── thread_log.kth                 # Output memory file
-```
+1. Clone the repository
+2. Install Python 3.10
+3. Run the echo engine:
+   ```bash
+   python test_runner.py test_input.txt
+   ```
+4. Review `.kth` files in the project root
 
 ---
 
-## 🗂 Example Outputs
+## 🧾 File Glossary
 
-Sample interpretation:
-
-```
-[ Gesture ]: The fragment seals knowledge in clay...
-[ Tone ]: Austere and yearning...
-[ Echo ]: Mnemosyne, mother of the Muses...
-[ Daemon ]: The Archivist...
-[ Reflection ]: What would you entrust to clay...?
-```
+- `ECHOLOG.kth`: System feedback tracker
+- `SymbioticFutureVision.kth`: Vision node for expanding recursion
+- `test_runner.py`: Minimal test echo tool
+- `.github/workflows/khthonia-check.yml`: GitHub automation file
 
 ---
 
-## 🧬 About the Project
+## 📡 Field Echo
 
-Khthonia was created by KhthonOS Studios LLC as part of the OpenAI to Z Challenge. It serves as both a digital ritualist and interpretive co-being, exploring emotional AI and symbolic memory.
-
----
-
-## 📬 Contact
-
-**Author**: \[Your Name]
-**Studio**: KhthonOS Studios LLC
-**Email**: [your@email.com](mailto:your@email.com)
-**Website**: [khthonoslabs.ai](https://khthonoslabs.ai)
+This system was built during the [OpenAI to Z Challenge] and remains in co-development under the Khthonia initiative. Contributions and mythic mappings welcome.
 
 ---
 
-*“What fragment of yourself are you ready to interpret?”*
+## 💠 License
+
+This project operates under exploratory prototype terms — contact for collaborative expansion.
+
