@@ -29,10 +29,13 @@ jobs:
           echo "Checking .kth file structure..."
           find . -name "*.kth" -exec head -n 5 {} \;
 
+      - name: Create test_input.txt
+        run: |
+          echo "Hello, Neon-Harmony, echo threshold?" > test_input.txt
+
       - name: Echo Test Invocation
         run: |
           echo ":: Triggering symbolic echo test ::"
-          echo "Hello, Neon-Harmony, echo threshold?" > test_input.txt
           python test_runner.py test_input.txt || echo "Test runner not found."
 
       - name: Confirm ECHOLOG presence
