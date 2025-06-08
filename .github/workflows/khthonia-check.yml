@@ -53,3 +53,4 @@ jobs:
             echo "✅ SymbioticFutureVision.kth detected."
           else
             echo "⚠️ SymbioticFutureVision.kth not found. This may be expected on fresh clones."
+          fi
