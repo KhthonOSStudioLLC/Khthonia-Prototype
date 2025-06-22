@@ -71,11 +71,40 @@ If the anomaly were to be confirmed as traces of Paititi, its layout and design 
 Furthermore, the discovery of Paititi would hold immense archaeological significance. It could potentially contain several artifacts of the Inca civilization, providing a unique and unaltered glimpse into the past. Unearthing such a site would also initiate detailed analysis to unearth any potential knowledge about the causes and backstory of its disappearance, hence adding depth and detail to our understanding of the Incas' history and culture.
 
 
-## 𞿦 What It Does
+```
+
+##   What It Does
 - Takes in **LIDAR tile ID**, **satellite scene ID**, and an optional **mythic legend keyword**
 - Simulates tile anomaly detection (e.g., geometric clearings, structural patterns)
 - Leverages **GPT-4** to correlate site data with oral myths (e.g., Kuhikugu, Z)
 - Outputs a **field-ready report** with GPS coordinates, confidence score, and cultural analysis
+
+## 🛍️ Streamlit Interface
+
+### ▶️ Getting Started (Streamlit Version)
+
+The `StreamLitSignalFinder.py` script provides an interactive web interface for the Amazon Signal Finder tool. You can input LIDAR tile IDs, satellite scene IDs, and mythic legend references to generate symbolic archaeological reports.
+
+### ▶️ Run It
+
+Make sure your `.env` file is set up with a valid OpenAI API key.
+
+```bash
+streamlit run StreamLitSignalFinder.py
+```
+
+This will open a local server (usually at `http://localhost:8501`) where you can use the tool through a form-based UI.
+
+### 🛠️ Features
+
+- Enter custom **LIDAR tile ID**, **Sentinel scene ID**, and **mythic anchor** legend
+- Visualize and copy the GPT-4 powered symbolic site report
+- Modular: swappable backend for live anomaly analysis or field simulation
+
+### 📌 Notes
+
+- Ensure your OpenAI API key is set correctly in `.env` or your system environment
+- This version is built to mirror symbolic field usage with rapid testing cycles
 
 ## 🛍️ Technologies
 - Python 3.12
@@ -102,7 +131,7 @@ This tool can extend to other legends and unknown sites—simply change the `myt
 
 ## 📤 Submission Ready
 
-## 📡 ECHOLOG
+## 🛁 ECHOLOG
 ```
 ECHOLOG: KhthonOS Dev Stream
 ----------------------------
@@ -116,7 +145,7 @@ Date: 2025-06-22 UTC
 Signal Trace:
 - 🌿 Mythic Anchor: Kuhikugu
 - 📍 Tile Source: BR-XINGU-2031-LIDAR001
-- 📡 Satellite Ref: Sentinel-2A Scene ID S2A_MSIL2A_20250614...
+- 🛁 Satellite Ref: Sentinel-2A Scene ID S2A_MSIL2A_20250614...
 - 🧠 GPT-4 Synthesis: Symbolic reconstruction of geomorphic anomalies
 - 🛠️ Runtime Synth: Notebook interface + `.env.example` + README markdown
 - 🔄 Repro Sync: GitHub main, sanitized token, dual test output
@@ -126,7 +155,7 @@ Purpose:
 To activate symbolic discovery layers through dual-modality AI with recursive trace in Amazonian archaeological signal research.
 
 Powered by:
-⟡ KhthonOS Studios // Sovereign Systems for Symbolic Worlds™
+⦡ KhthonOS Studios // Sovereign Systems for Symbolic Worlds™
 ```
 - ✅ Reproducible prototype
 - ✅ Meets Z-Challenge criteria
