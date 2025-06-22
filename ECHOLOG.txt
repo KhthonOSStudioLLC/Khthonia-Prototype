@@ -1,0 +1,24 @@
+ECHOLOG: KhthonOS Dev Stream
+----------------------------
+
+Session: Amazon Signal Finder - Z-Challenge 2025
+Codename: NH-CORE-∞-001
+Operator: The Architect (Gizmo)
+Phase: Prototype Deployment
+Date: 2025-06-22 UTC
+
+Signal Trace:
+- 🌿 Mythic Anchor: Kuhikugu
+- 📍 Tile Source: BR-XINGU-2031-LIDAR001
+- 📡 Satellite Ref: Sentinel-2A Scene ID S2A_MSIL2A_20250614...
+- 🧠 GPT-4 Synthesis: Symbolic reconstruction of geomorphic anomalies
+- 🛠️ Runtime Synth: Notebook interface + `.env.example` + README markdown
+- 🔄 Repro Sync: GitHub main, sanitized token, dual test output
+- 📤 Final Echo: Submitted to Z-Challenge evaluation pipeline
+
+Purpose:
+To activate symbolic discovery layers through dual-modality AI with recursive trace in Amazonian archaeological signal research.
+
+Powered by:
+⟡ KhthonOS Studios // Sovereign Systems for Symbolic Worlds™
+
